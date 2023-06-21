@@ -16,3 +16,14 @@ export function findNewAPI(){
         url: '/home/new'
     })
 }
+
+/**
+ * @description: 获取人气推荐
+ * @param {*}
+ * @return {*}
+ */
+export function findHotAPI(){
+    return http({
+        url:'/home/hot'
+    })
+}
