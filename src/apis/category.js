@@ -5,7 +5,7 @@ import http from '@/utils/http'
  * @param {*} id 分类id 
  * @return {*}
  */
-export const getTopCategoryAPI = (id) => {
+export const getCategoryAPI = (id) => {
     return http({
         url: '/category',
         params: {
