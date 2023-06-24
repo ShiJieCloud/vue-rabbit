@@ -20,7 +20,7 @@ onMounted(() => {
         <!-- 下面是插槽主体内容模版 -->
         <ul class="goods-list">
             <li v-for="item in newList" :key="item.id">
-                <RouterLink to="/">
+                <RouterLink :to="`/detail/${item.id}`">
                     <img v-img-lazy="item.picture" alt="" />
                     <p class="name">{{ item.name }}</p>
                     <p class="price">&yen;{{ item.price }}</p>
