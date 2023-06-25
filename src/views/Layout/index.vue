@@ -18,4 +18,4 @@ onMounted(() => {
     <LayoutHeader />
     <RouterView />
     <LayoutFooter />
-</template>
+</template>@/stores/categoryStore@/stores/categoryStore
