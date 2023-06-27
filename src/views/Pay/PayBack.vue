@@ -6,7 +6,8 @@ import { useRoute } from 'vue-router'
 const orderInfo = ref({})
 const route = useRoute()
 const getOrderInfo = async ()=>{
-   orderInfo.value = await getOrderAPI(route.query.orderId)
+    const res = await getOrderAPI(route.query.orderId)
+   orderInfo.value = res.result
 }
 
 onMounted(()=>getOrderInfo())
